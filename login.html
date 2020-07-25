@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><center>
+<style>
+h1{background:;text-align:center;font-size:50;color:red;}
+
+.bg{
+  /* The image used */
+  background-image: url("hotel3.jpg");
+
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+}
+.button{
+background-color:#008CBA;
+border-radius:12px;
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+</style>
+<body class="bg">
+<script>
+function my()
+{
+alert("submitted successfully");
+}
+</script>
+<h1><i>LOGIN HERE</i></h1></br></br></br></br>
+<form method="post" action="login.php">
+Username:<input type="text" Username="" name="name" placeholder="Your name"/></br>
+Password:<input type="password" password="" name="pwd" placeholder="Your password"/></br></br>
+<input type="submit" value="Login" class="button"></br></br></br></br></br></br>
+<p><b><u>New User? register here</u></b></p>
+<input type="button" onclick="location.href='reg.html'" value="REGISTER" class="button"/>
+</form></center>
+</body>
+</html>
+<!--<input type="button" onclick="window.open('page.html','_blank')" value="SUBMIT"/></br>-->

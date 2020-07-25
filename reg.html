@@ -1,0 +1,98 @@
+<html>
+<head>
+<script type="text/javascript" src="validate.js"></script>
+<style>
+.h1{background:;text-align:center;color:red;}
+.bg{
+  /* The image used */
+  background-image: url("hotel3.jpg");
+
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+}
+.button{
+background-color:orange;
+border-radius:12px;
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+</style>
+</head>
+<body class="bg">
+<form action="udetails_database.php" method="post" name="Registration" onsubmit="return(validate());">
+    
+    <table cellpadding="2" width="20%"  align="center"
+	cellspacing="2">
+
+	<tr>
+		<td colspan=2>
+		<center><font size=5 class="h1"><b><i> Register here</i></b></font></center>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Name</td>
+		<td><input type=text name="Name" id="Name" size="30" placeholder="Your name"></td>
+	</tr>
+	
+	<tr>
+		<td>EmailId</td>
+		<td><input type="text" name="emailid" id="emailid" size="30" placeholder="Your emailId"></td>
+	</tr>
+
+	<tr>
+		<td>DOB</td>
+		<td><input type="text" name="dob" id="dob" size="30" placeholder="Your DOB  yyyy-mm-dd"></td>
+	</tr>
+
+	<tr>
+		<td>MobileNo</td>
+		<td><input type="text" name="mobileno" id="mobileno" size="30" placeholder="Your phone"></td>
+	</tr>
+	
+	<tr>
+		<td>Sex</td>
+		<td><input type="radio" name="sex" value="male" size="10">Male
+		<input type="radio" name="sex" value="Female" size="10">Female</td>
+	</tr>
+
+	<tr>
+		<td>Password</td>
+		<td><input type="password" password="" name="password" id="password" placeholder="Set a password"/></td>
+	</tr>
+	<tr>
+		<td>Confirm pwd</td>
+		<td>:<input type="password" password="" name="confrm_password" id="confrm_password" placeholder="Reenter password"/></td>
+	</tr>
+
+	
+
+	<tr>
+		<td>Area</td>
+		<td><select name="Area">
+			<option value="-1" selected>select..</option>
+			<option value="Kadapa">Kadapa</option>
+			<option value="Thirupati">Chennai</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Bangalore">Bangalore</option>
+			<option value="Chennai">Chennai</option>
+		</select></td>
+	</tr>
+	
+	
+	<tr>
+		<td>Delivery Address</td>
+		<td><textarea row="4" cols="30" name="add" id="add" placeholder="Give your address"></textarea></td>
+		
+	</tr>
+	
+
+	<tr>
+	      <td><input type="reset" class="button"></td>
+		<td colspan="2"><input type="submit" value="Register" class="button" /></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
